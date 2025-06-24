@@ -1,0 +1,14 @@
+{
+  "name": "@gympro/mobile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start"
+  },
+  "dependencies": {
+    "expo": "^48.0.0",
+    "react": "18.2.0",
+    "react-native": "0.71.8",
+    "zustand": "^4.4.1"
+  }
+}

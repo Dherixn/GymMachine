@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/utils"
+    },
+    {
+      "path": "packages/apps/api"
+    },
+    {
+      "path": "packages/ui"
+    }
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@gympro/api",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@trpc/server": "^10.36.0",
+    "@trpc/client": "^10.36.0",
+    "zod": "^3.22.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
