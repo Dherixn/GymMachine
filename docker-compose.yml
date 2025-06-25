@@ -13,7 +13,9 @@ services:
     ports:
       - '8080:8080'
   api:
-    build: ./packages/apps/api
+    build:
+      context: .
+      dockerfile: packages/apps/api/Dockerfile
     ports:
       - '3000:3000'
     depends_on:
