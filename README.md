@@ -15,3 +15,7 @@ Run mobile:
 cd packages/apps/mobile
 expo start
 ```
+
+### Environment Variables
+
+Set `OPENAI_API_KEY` to enable OpenAI requests from utility functions.
