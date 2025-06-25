@@ -1,8 +1,14 @@
 /**
  * OpenAI client with retry logic.
- * Client stub for offline usage.
  */
+import OpenAI from 'openai';
+
+const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY || '' });
+
 export const createChatCompletion = async (prompt: string): Promise<string> => {
-  // TODO: integrate real OpenAI call
-  return Promise.resolve(`Response for: ${prompt}`);
+  const response = await client.chat.completions.create({
+    model: 'gpt-3.5-turbo',
+    messages: [{ role: 'user', content: prompt }],
+  });
+  return response.choices[0]?.message?.content ?? '';
 };
